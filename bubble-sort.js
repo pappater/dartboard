@@ -51,3 +51,18 @@
 // - **Simple to understand** but inefficient for large datasets.
 
 // Bubble Sort is often used for educational purposes to introduce the concept of sorting algorithms but is rarely used in practice for large datasets due to its inefficiency.
+
+const input = [5, 2, 9, 1, 5, 6];
+
+let output = [];
+for (let i = 0; i <= input.length; i++) {
+  if (input[i] < input[i + 1]) {
+    console.log(`${input[i + 1]} is greater than ${input[i]}`);
+
+    // output[i] = input[i + 1];
+  } else {
+    // output[i] = input[i];
+    console.log(`${input[i]} is greater than ${input[i + 1]}`);
+  }
+}
+console.log("output", output);
